@@ -20,3 +20,5 @@ RUN apk update \
     && chmod +x kubectl \
     && mv kubectl /usr/local/bin/kubectl
 
+COPY setup /setup
+

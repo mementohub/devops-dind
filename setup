@@ -16,3 +16,7 @@ else
 	export CI_COMMIT_REF_NAME=$3
 fi
 
+wget -O - https://s3.eu-central-1.amazonaws.com/imm-devops/scripts/bootstrap.sh | /bin/sh
+
+cd $SCRIPTS_DIR
+
